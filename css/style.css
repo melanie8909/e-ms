@@ -123,13 +123,22 @@ h1,h2,h3,h4,h5,h6,p,a{
 }
 
 /* 單欄 叫號區塊 */
-.col-single .block-num{
-	padding: 0.5208333333vw; /* 10px */
+.col-single .block-num,
+.block-num.single{
+	padding: 1.3888888888vw; /* 10px */
+	min-height: 1060px;
+	/*background-color: #f00;*/
 } 
 .col-single .content{
 	width: calc(100vw - 62.5vw - 0.5208333333vw *2); 
 	background: var(--ms-yellow-gradient);
-	height: 100%; /* 1060px */
+	/*height: 100%;*/ /* 1060px */
+	height: calc(100vh - 1.3888888889vw * 2);
+}
+.block-num.single .content{
+	width: calc(100vw - 1.3888888888vw *2); 
+	background: var(--ms-yellow-gradient);
+	height: calc(100vh - 1.3888888889vw * 2);
 }
 .block-num .box-title{
 	display: flex;
@@ -138,55 +147,55 @@ h1,h2,h3,h4,h5,h6,p,a{
 	align-items: center;
 	height: 13.2075471698% ;/* 140px */
 	background-color: var(--ms-blue);
-	padding: 1.5625vw; /* 30px */
+	padding: 4.1666666667vw; /* 30px */
 }
 .block-num .box-date{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
-	width: 6.5625vw; /* 126px */
+	width: 17.5vw; /* 126px */
 	color: var(--white);
 }
 .block-num .date{
 	width: 100%;
-	font-size: 1.4vw;
-	margin-bottom: .2vw;
+	font-size: 3.7333333333vw;
+	margin-bottom: .2em;
 	color: var(--white);
 }
 .block-num .week{
 	width: 100%;
-	font-size: 2vw;
+	font-size: 5.3333333333vw;
 	color: var(--white);
 }
 .block-num .box-time{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 10.9375vw; /* 210px */
+	width: 29.1666666667vw; /* 210px */
 	text-align: right;
 	margin: 0;
 }
 .block-num .time{
 	color: var(--white);
 	font-family: 'hei12';
-	font-size: 3.8vw;
+	font-size: 10.1333333333vw;
 	transform: scaleY(1.2);
 	margin: 0;
 }
 .block-num .info{
 	color: var(--white);
 	font-family: 'hei12';
-	font-size: 3.8vw;
+	font-size: 10.1333333333vw;
 	transform: scaleY(1.2);
 }
 .block-num .box-info{
-	margin: 1.5625vw; /* 30px */
-	height: calc( 100% - 13.2075471698% - 1.5625vw * 2);
-	padding: 0.78125vw; /* 15px */
+	margin: 4.1666666667vw; /* 30px */
+	height: calc( 100% - 13.2075471698% - 4.1666666667vw * 2);
+	padding: 2.0833333333vw; /* 15px */
 	background-color: var(--white);
 	border-radius: 1em;
-	border: .4vw solid var(--ms-orange);
+	border: .4em solid var(--ms-orange);
 	box-shadow: 0 0 10px 2px rgba(100,50,0,.5);
 }
 
@@ -198,11 +207,11 @@ h1,h2,h3,h4,h5,h6,p,a{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: space-around;
-	padding: 10px;
+	padding: 1.3888888889vw;
 }
 .block-num .box-top [class^="col-"]{
 	text-align: center;
-	font-size: 1vw;
+	font-size: 2.6666666667vw;
 	align-self: flex-end;
 	text-align: center;
 }
@@ -210,29 +219,29 @@ h1,h2,h3,h4,h5,h6,p,a{
 	align-self: flex-end;
 }
 .block-num .box-top .role{
-	font-size: 1.5vw;
+	font-size: 4vw;
 }.block-num .box-top .eng{
-	font-size: .6vw;
+	font-size: 1.6vw;
 	font-family: san-serif;
 }
 .block-num .box-top .name{
-	font-size: 2.5vw;
+	font-size: 6.6666666667vw;
 	font-family: 'hei9';
 }
 .block-num .box-top .dept{
-	font-size: 3vw;
+	font-size: 8vw;
 	font-family: 'hei12';
 	text-align: right;
-	padding-right: 1vw;
+	padding-right: 2.6666666667vw;
 }
 .block-num .box-top .num{
-	font-size: 3vw;
+	font-size: 8vw;
 	font-family: 'hei12';
 	transform: scaleY(1.3);
 	letter-spacing: -0.1em;
 }
 .block-num .box-top .shift{
-	font-size: 1.5vw;
+	font-size: 4vw;
 	font-family: 'hei12';
 }
 
@@ -240,24 +249,24 @@ h1,h2,h3,h4,h5,h6,p,a{
 .block-num .box-info .box-center{
 	/*background-color: #faa;*/
 	height: 39.7590361446%; /* 330px/830px */
-	padding: 1.0416666667vw 0;
+	padding: 2.7777777779vw 0;
 	display: flex;
 }
 .block-num .box-center [class^="col-"]:first-child{
-	padding-right: 1.0416666667vw;
+	padding-right: 2.7777777779vw;
 }
 .block-num .box-center [class^="col-"] .item{
 	background-color: var(--ms-orange-10p);
 	height: 100%;
 	border-radius: .5em;
-	font-size: 1vw;
+	font-size: 2.6666666667vw;
 }
 .item.now{
 	display: flex;
 	align-items: center;
 }
 .item.now [class^="col-"]:first-child{
-	font-size: 2vw;
+	font-size: 5.3333333333vw;
 	align-self: center;
 	text-align: center;
 	padding: 0.2em;
@@ -267,16 +276,19 @@ h1,h2,h3,h4,h5,h6,p,a{
 	border-radius: .2em;
 	padding: 0 .3em .3em;
 	margin-top: .5em;
-	font-size: 1.5vw;
+	font-size: 4vw;
 	font-family: 'hei7';
+	text-align: center;
 }
 .item.now .num{
-	font-size: 10vw;
+	/*font-size: 26.6666666667vw;*/
+	font-size: 20vw;
 	font-family: 'hei12';
 	letter-spacing: -.1em;
 	align-self: center;
-	transform: scaleY(1.2);
+	transform: scaleY(1.3) translateX(-5%);
 	color: var(--ms-red);
+	text-align: center;
 }
 .item.next{
 	display: flex;
@@ -285,7 +297,7 @@ h1,h2,h3,h4,h5,h6,p,a{
 	text-align: center;
 }
 .item.next p{
-	font-size: 2vw;
+	font-size: 5.3333333333vw;
 }
 .item.next .eng{
 	font-size: 1em;
@@ -293,11 +305,13 @@ h1,h2,h3,h4,h5,h6,p,a{
 	margin-top: .5em;
 }
 .item.next .num{
-	font-size: 8vw;
+	/*font-size: 21.3333333333vw;*/
+	font-size: 18vw;
 	font-family: 'hei12';
 	letter-spacing: -.1em;
 	align-self: center;
-	transform: scaleY(1.2) translateX(-5%);
+	transform: scaleY(1.3) translateX(-2%);
+	text-align: center;
 	color: var(--ms-browngray);
 }
 /* 單欄 叫號區塊_下 */
@@ -307,21 +321,22 @@ h1,h2,h3,h4,h5,h6,p,a{
 	background: var(--ms-orange-gradient);
 	height: 38.5542168675%; /* 320px/830px */
 	border-radius: 1em;
-	padding: 0.78125vw 1.5625vw; /* 15px 30px */
+	padding: 2.0833333333vw 4.1666666667vw; /* 15px 30px */
 }
 .block-num .box-bottom .box-title{
 	background: none;
 	justify-content: center;
 	padding: 0;
-	margin-bottom: 1.1vw;
+	margin-bottom: 2.9333333333vw;
 }
 .box-bottom .box-title p{
 	color: var(--white);
-	font-size: 2vw;
+	font-size: 5.3333333333vw;
 }
 .block-num .box-bottom .box-list{
 	display: flex;
-	font-size: 1.5vw;
+	font-size: 3.6vw;
+	line-height: 1.65em;
 	text-align: right;
 	color: var(--white);
 }
@@ -337,13 +352,21 @@ h1,h2,h3,h4,h5,h6,p,a{
 }
 
 /* 單欄 綜合區塊 */
-.col-single .block-num.all .content{
+.block-num.all{
+	padding: 1.3888888888vw;
+	/*height: 100%;*/
+	height: 1080px;
+}
+.block-num.all .content{
 	background: var(--ms-skyblue-gradient);
 	align-content: center;
+	width: calc( 100vw - 1.3888888888vw * 2);
+	height: 100%;
 }
 .block-num.all .box-title{
 	display: flex;
 	align-content: center;
+	height: 20.8333333333vw;
 }
 .block-num.all .box-title .box-time{
 	display: flex;
@@ -355,7 +378,7 @@ h1,h2,h3,h4,h5,h6,p,a{
 .block-num.all .box-title .box-time .time,
 .block-num.all .box-title .info{
 	width: auto;
-	font-size: 1.5vw;
+	font-size: 4vw;
 	font-family: 'hei9';
 	padding-right: 0.4em;
 }
@@ -363,36 +386,33 @@ h1,h2,h3,h4,h5,h6,p,a{
 	transform: scaleY(1.2) translateY(-1%);
 }
 .block-num.all .box-title .info{
-	font-size: 3vw;
+	font-size: 8vw;
 	margin-top: .2em;
-}
-.block-num.all .content{
-	height: 100%;
 }
 .block-num.all .box-info-cards{
 	display: flex;
 	flex-flow: row wrap;
-	height: calc(100% - 13.2075471698%); /* 1060px - 140px */
-	padding: 1.5625vw; /* 30px */
+	height: calc(100% - 20.8333333333vw);
+	padding: 4.1666666667vw; /* 30px */
+	justify-content: space-evenly;
 }
 .block-num.all .box-info-cards .card{
 	background-color: var(--ms-blue-light);
-	width: 16.1665vw;
-	height: 31.5217391304%;
+	width: 43vw;
 	margin-bottom: 2.7173913043%;
-	border: .2vw solid var(--white);
+	border: .2em solid var(--white);
 	border-radius: 1em;
-	padding: .8vw;
+	padding: .8em;
 }
 .block-num.all .box-info-cards .card:nth-child(n+5){
 	margin-bottom: 0;
 }
-.block-num.all .box-info-cards .card:nth-child(odd){
+/*.block-num.all .box-info-cards .card:nth-child(odd){
 	margin-right: 1vw;
-}
+}*/
 .box-info-cards .card .dept{
 	display: flex;
-	font-size: 2vw;
+	font-size: 5.3333333333vw;
 	font-family: 'hei9';
 	justify-content: space-around;
 	margin-bottom: .2em;
@@ -402,11 +422,11 @@ h1,h2,h3,h4,h5,h6,p,a{
 }
 .box-info-cards .card .box-num{
 	display: flex;
-	font-size: 1.5vw;
+	font-size: 4vw;
 	background-color: var(--white);
 	height: 100%;
 	border-radius: .5em;
-	padding: .5em;
+	padding: .2em;
 	align-items: center;
 }
 .box-info-cards .card .box-now{
@@ -417,10 +437,12 @@ h1,h2,h3,h4,h5,h6,p,a{
 	color: var(--ms-blue);
 }
 .box-info-cards .card .box-now p:last-child{
-	font-size: 7vw;
+	/*font-size: 18.6666666667vw;*/
+	font-size: 14vw;
 	font-family: 'hei12';
 	letter-spacing: -.1em;
-	transform: scaleY(1.2) translateX(-2%);
+	transform: scaleY(1.3);
+	text-align: center;	
 	color: var(--ms-red);
 }
 .box-info-cards .card .box-next{
@@ -438,7 +460,7 @@ h1,h2,h3,h4,h5,h6,p,a{
 	color: var(--white);
 }
 .box-info-cards .card .box-next p:last-child{
-	font-size: 2.5vw;
+	font-size: 6.6666666667vw;
 	font-family: 'hei9';
 	letter-spacing: -.1em;
 	transform: translateX(-5%);
@@ -485,123 +507,133 @@ h1,h2,h3,h4,h5,h6,p,a{
 
 
 /* 雙欄 雙診區塊 */
-.col-double .block-num{
-	width: 25vw;  /* 480px */
-	padding: 0.5208333333vw;  /* 10px */
+.block-num.double{
+	width: 100vw;  /* 480px */
+	padding: 2.0833333333vw;  /* 10px */
+	height: 1080px;
 }
-.col-double .content{
+.block-num.double .content{
 	background: var(--ms-yellow-gradient);
 	height: 100%; /* 1060px */
 }
-.col-double .block-num .box-title{
-	padding: 0.5208333333vw; /* 10px */
+.block-num.double .box-title{
+	padding: 2.0833333333vw; /* 10px */
 }
-.col-double .block-num .box-title p{
-	font-size: 3.75vw;
+.block-num.double .box-title p{
+	font-size: 15vw;
 	margin-bottom: 0;
 	text-align: center;
 	width: 100%;
 	transform: translateY(0);
 }
-.col-double .block-num .box-time{
+.block-num.double .box-time{
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
 }
-.col-double .block-num .box-time .date,
-.col-double .block-num .box-time .week,
-.col-double .block-num .box-time .time{
+.block-num.double .box-time .date,
+.block-num.double .box-time .week,
+.block-num.double .box-time .time{
 	width: auto;
-	font-size: 1.25vw;
-	margin-right: 0.5208333333vw;
+	font-size: 5vw;
+	margin-right: 2.0833333323vw;
 	font-family: 'hei7';
 }
 
-.col-double .block-num .box-info {
-    margin: 0.78125vw; /* 15px */
-    height: calc( 100% - 13.2075471698% - 0.78125vw * 2);
-    padding: 0.78125vw; /* 15px */
+.col-double .block-num.double .box-info {
+    margin: 3.125vw; /* 15px */
+    height: calc( 100% - 13.2075471698% - 3.125vw * 2);
+    padding: 3.125vw; /* 15px */
 }
 
 /* 雙診叫號 上 */
-.col-double .block-num .box-top{
+.block-num.double .box-top{
 	padding: 0;
 	align-content: space-evenly;
 }
-.col-double .block-num .box-top .num{
-    font-size: 2.6vw;
+.block-num.double .box-top .num{
+    font-size: 10.4vw;
     font-family: 'hei12';
     padding: 0;
 }
-.col-double .block-num .box-top .shift{
-    font-size: 1.25vw; /* 24px */
+.block-num.double .box-top .shift{
+    font-size: 5vw; /* 24px */
     font-family: 'hei12';
     padding: 0;
 }
-.col-double .block-num .box-top .dept{
-    font-size: 2.6vw;
+.block-num.double .box-top .dept{
+    font-size: 10.4vw;
     font-family: 'hei12';
     text-align: right;
     padding: 0;
     transform: scaleY(1.2);
 }
-.col-double .block-num .box-top .box-role{
+.block-num.double .box-top .box-role{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	transform: translateY(.5em);
 }
-.col-double .block-num .box-top .role{
-	font-size: 1vw;
+.block-num.double .box-top .role{
+	font-size: 4vw;
 	margin-right: .2em;
 }
-.col-double .block-num .box-top .name{
-	font-size: 2.6041666667vw; /* 50px */
+.block-num.double .box-top .name{
+	font-size: 10.4vw; /* 50px */
 }
 
 
 /* 雙診叫號 中 */
-.col-double .item.now{
+.block-num.double .item.now{
 	flex-wrap: wrap;
 	align-content: center;
 }
-.col-double .item.now [class^="col-"]:first-child{
+.block-num.double .item.now [class^="col-"]:first-child{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-    font-size: 1.7vw;
+    font-size: 6.8vw;
 }
-.col-double .item.now .badge{
+.block-num.double .item.now .badge{
     background-color: var(--ms-pink-50p);
     border-radius: 0.2em;
     padding: 0 0.3em 0.3em;
-    font-size: 1.2vw;
+    font-size: 4.8vw;
     font-family: 'hei7';
     margin-top: 0;
     margin-left: 0.2em;
 }
-.col-double .item.next p{
-    font-size: 1.7vw;
+.block-num.double .item.next p{
+    font-size: 6.8vw;
 }
-.col-double .item.next .eng{
-	font-size: .8vw;
+.block-num.double .item.next .eng{
+	font-size: 3.2vw;
 }
-.col-double .item.next .num{
-	font-size: 5vw;
+.block-num.double .item.next .num{
+	font-size: 13vw;
 	line-height: 1.5;
 	transform: scaleY(1.3) translateX(-.05em);
 }
 
 
 /* 雙診叫號 下 */
-.col-double .block-num .box-bottom .box-title p{
-	font-size: 2vw;
+.block-num.double .box-bottom .box-title p{
+	font-size: 8vw;
 }
-.col-double .block-num .box-bottom .box-list{
-	font-size: 1.5vw;
+.block-num.double .box-bottom .box-list{
+	font-size: 6vw;
 }
-.col-double .box-list tr td:nth-child(3) {
+.block-num.double .box-list tr td:nth-child(3) {
     border-right: none;
     padding-right: 0;
+}
+
+
+
+/* iframe */
+.col-single iframe.block-frame,
+.col-double iframe.block-frame{
+	width: 100%;
+	min-height: 100%;
 }
