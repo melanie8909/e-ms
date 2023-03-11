@@ -699,3 +699,81 @@ h1,h2,h3,h4,h5,h6,p,a{
     font-family: 'hei12';
 }
 /* 2023-03-05 End */
+
+
+/* 2023-03-11 Begin */
+/* col-lab */
+.block-num.all.lab .box-title {
+    justify-content: center;
+}
+.block-num.all.lab .box-title .info {
+    font-size: 11vw;
+    transform: translateY(0) scaleY(1.2);
+    margin-top: 0;
+    padding-right: 0;
+}
+.block-num.all.lab .box-info-cards{
+	align-content: flex-start;
+}
+.block-num.all.lab .box-info-cards .card {
+    width: 100vw;
+    flex-direction: row;
+    height: 32%;
+}
+.block-num.all.lab .card .dept{
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	font-size: 7vw;
+	font-family: 'hei7';
+}
+.block-num.all.lab .card .dept .name{
+	font-size: 4vw;
+}
+.block-num.all.lab .card .dept .name-en{
+	font-size: 2.5vw;
+	font-family: 'hei3';
+}
+.block-num.all.lab .card .dept .num{
+	font-size: 19vw;
+	font-family: 'hei9';
+}
+.block-num.all.lab .card .box-num{
+	flex-direction: column;
+}
+.block-num.all.lab .card .box-now{
+	width: 100%;
+	letter-spacing: .2em;
+}
+.box-info-cards .card .box-now p:last-child{
+	font-size: 18vw;
+}
+.block-num.all.lab .card .box-next{
+	width: 100%;
+	flex-direction: row;
+	height: auto;
+	margin-top: auto;
+}
+.box-info-cards .card .box-next p:first-child{
+	writing-mode: inherit;
+	letter-spacing: .2em;
+}
+.box-info-cards .card .box-next p:last-child{	
+	letter-spacing: .2em;
+}
+.block-num.double.exmaine .box-info{
+	display: flex;
+	flex-direction: column;
+}
+.block-num.double.exmaine .box-info .box-center{
+	flex-grow: 1;
+}
+.block-num.double.exmaine .box-info .box-center{
+	height: 23.1481481481vh; /* 250px */
+}
+.block-num.double.exmaine .box-info .box-bottom{
+	flex-grow: 0;
+	height: 36.1111111111vh;  /* 390px */
+	overflow: hidden;
+}
+/* 2023-03-11 End */
