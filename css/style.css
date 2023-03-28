@@ -777,3 +777,32 @@ h1,h2,h3,h4,h5,h6,p,a{
 	overflow: hidden;
 }
 /* 2023-03-11 End */
+
+/* 2023-03-27 Begin */
+	.block-num.all.lab .box-title{
+		gap: 2vw 0;
+	}
+	.block-num.all.lab .box-title p{
+		padding: 0.2em;
+		font-family: 'hei9';
+		color: var(--white);
+		text-align: right;
+		font-size: 5vw;
+	}
+	.block-num.all.lab .box-title .box-num {
+		background-color: var(--white);
+		border-radius: 1000px;
+		padding: .2em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.block-num.all.lab .box-title .box-num p{
+		color: var(--ms-blue);
+		font-size: 3vw;
+	}
+	.block-num.all.lab .box-title .box-num span{
+		color: var(--ms-red);
+		font-size: 6vw;
+	}
+/* 2023-03-27 End */
