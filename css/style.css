@@ -806,3 +806,98 @@ h1,h2,h3,h4,h5,h6,p,a{
 		font-size: 6vw;
 	}
 /* 2023-03-27 End */
+
+
+/* 2023-03-31 Begin */
+.block-num.double.type2 .box-title{
+	padding-left: 5vw;
+	padding-right: 5vw;	
+}
+.block-num.double.type2 .box-title p{
+	color: var(--white);
+}
+.block-num.double.type2 .box-title .num{
+	font-size: 18vw;
+	font-family: 'hei7';
+	letter-spacing: -1vw;
+}
+.block-num.double.type2 .box-title .shift{
+	font-size: 6vw;
+	line-height: 1.2;
+}
+.block-num.double.type2 .box-title .dept{
+	text-align: right;
+	font-family: 'hei9';
+	transform: scaleX(.9);
+}
+.block-num.double.type2 .box-top{
+	align-content: center;
+}
+.block-num.double.type2 .box-top .role{
+    font-size: 6vw;
+    margin-bottom: 3vw;
+}
+.block-num.double .box-top .name {
+    font-size: 12vw;
+}
+.block-num.double.type2 .box-bottom .box-title p,
+.block-num.double.type2 .box-bottom .box-list{
+	color: #000000;
+}
+.block-num.double.type2 .item.now .num{
+	font-size: 36vw;
+}
+.block-num.double.type2 .item.next .num{
+	font-size: 20vw;
+}
+
+
+
+
+.block-num.single.type2 .box-title{
+	padding: 0 5vw;	
+}
+.block-num.single.type2 .box-title p{
+	color: var(--white);
+}
+.block-num.single.type2 .box-title .num{
+	font-size: 16vw;
+	font-family: 'hei7';
+	letter-spacing: -1vw;
+	line-height: 1;
+}
+.block-num.single.type2 .box-title .shift{
+	font-size: 5vw;
+	line-height: 1.2;
+}
+.block-num.single.type2 .box-title .dept{
+	text-align: right;
+	font-family: 'hei9';
+	transform: scaleX(.9);
+	font-size: 12vw;
+}
+.block-num.single.type2 .box-top{
+	align-content: center;
+}
+.block-num.single.type2 .box-top .role{
+    font-size: 5vw;
+    margin-bottom: 1vw;
+}
+.block-num.single .box-top .name {
+    font-size: 11vw;
+}
+.block-num.single.type2 .item.now .num{
+	font-size: 28vw;
+}
+.block-num.single.type2 .item.next .num{
+	font-size: 24vw;
+}
+.block-num.single.type2 .box-bottom .box-title p,
+.block-num.single.type2 .box-bottom .box-list{
+	color: #000000;
+}
+.block-num.single.type2 .box-bottom .box-list tr td:nth-child(3){
+    border-right: .05em solid #000000;
+}
+.item.now .num
+/* 2023-03-31 End */
